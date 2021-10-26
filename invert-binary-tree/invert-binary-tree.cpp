@@ -11,8 +11,7 @@
  */
 class Solution {
 public:
-  
-    
+
     TreeNode* invertTree(TreeNode* root) {
         queue<TreeNode*> q;
         q.push(root);
