@@ -7,7 +7,6 @@ public:
             early += (nums[i] < pivot);
             count += (nums[i] == pivot);
         }
-        cout << early << " " << count;
         int left = 0, right = early+count;
         for(auto n : nums){
             if(n < pivot) ans[left++] = n;
