@@ -7,7 +7,6 @@ public:
         for(int i = 1; i < n; i++ ){
             int range = 3 * (int)pow(2,i);
             temp.resize(range);
-            cout << temp.size() << " ";
             for(int j = 0; j < range; j+=2){
                 temp[j] = temp[j+1] = arr[j/2];
                 // find next character
