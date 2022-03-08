@@ -1,10 +1,17 @@
 class Solution {
 public:
-bool areAlmostEqual(string s1, string s2) {
-    vector<array<char, 2>> mis;
-    for (auto i = 0; i < s1.size() && mis.size() < 3; ++i)
-        if (s1[i] != s2[i])
-            mis.push_back({mis.empty() ? s1[i] : s2[i], mis.empty() ? s2[i] : s1[i]});
-    return mis.empty() || (mis.size() == 2 && mis[0] == mis[1]);
-}
+    bool areAlmostEqual(string s1, string s2) {
+        int n = s1.size();
+        int nonEq = 0;
+        char ns11, ns12, ns21, ns22;
+        for(int i = 0; i < n; i++){
+            if(s1[i] != s2[i]){
+                nonEq++;
+                if(nonEq == 1) ns11 = s1[i], ns21 = s2[i];
+                else ns12 = s1[i], ns22 = s2[i];
+            }
+        }
+        if(nonEq != 0 && nonEq != 2) return 0;
+        return nonEq == 0 || (ns11 == ns22 && ns12 == ns21);
+    }
 };
