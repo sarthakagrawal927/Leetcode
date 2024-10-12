@@ -2,6 +2,7 @@
   "files.associations": {
     "*.js": "javascriptreact",
     "vector": "cpp",
-    "string": "cpp"
+    "string": "cpp",
+    "algorithm": "cpp"
   }
 }
