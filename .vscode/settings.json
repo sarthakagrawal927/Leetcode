@@ -3,6 +3,7 @@
     "*.js": "javascriptreact",
     "vector": "cpp",
     "string": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "unordered_map": "cpp"
   }
 }
