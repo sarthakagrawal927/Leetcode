@@ -4,6 +4,9 @@
     "vector": "cpp",
     "string": "cpp",
     "algorithm": "cpp",
-    "unordered_map": "cpp"
+    "unordered_map": "cpp",
+    "unordered_set": "cpp",
+    "queue": "cpp",
+    "stack": "cpp"
   }
 }
